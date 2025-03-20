@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+        <meta name="author" content="Luiz Miguel/ Vinicius Melo/ Ricardo"/>
+        <meta name="description" content="trabalho conclusao primeiro semestre ds"/>
+        <meta name="reply-to" content="luiz.silva1815@etec.sp.gov.br"/>
+        <meta name="keywords" content="grife, roupas, estilo, street, dev, desenvolvedor"/>
+        
+        <title>Street Dev</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/script.js"></script>
+
+    </head>
+    
+    <body>
+        <header>
+            <img src="imagens/Logo - Fundo Claro.png"/>
+            <nav>
+                <ul>
+                    <li><span id="botao-hamburg-abre" onClick="abreMenu()">&#9776;</span></li>
+                    <li><span id="botao-hamburg-fecha" onClick="fechaMenu()">&#88;</span></li>
+                    <li><a href="#topo">Home</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="#colecao">Coleção</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="#contatos">Contato</a></li>
+                  </ul>  
+            </nav>
+
+        </header>
+
+        <section>
+        <aside id="menu-lateral">  
+                <ul>
+                    <li><span onClick="fechaMenu()"><a href="#topo">Home</a></span></li>
+                    <li>&nbsp;</li>
+                    <li><span onClick="fechaMenu()"><a href="#colecao">Coleção</a></span></li>
+                    <li>&nbsp;</li>
+                    <li><span onClick="fechaMenu()"><a href="#destaques">Destaques</a></span></li>
+                    <li>&nbsp;</li>
+                    <li><span onClick="fechaMenu()"><a href="#sobre">Sobre</a></span></li>
+                    <li>&nbsp;</li>
+                    <li><span onClick="fechaMenu()"><a href="#contatos">Contato</a></span></li>
+                </ul>
+        </aside>
+        </section>
+
+        <section id="separacao">
+            <div id="topo"></div>
+        </section>
+
+        <section class="logo">
+            <img src="imagens/Logo - Fundo Claro.png">
+        </section>
+
+        <div class="titulo">
+            <table>
+                <tr>
+                    <td class="descricao">
+                        <h2>&lt;COLEÇÃO&gt;</h2>
+                    </td>
+                    <td class="seta">
+                        <h2>&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&rarr;</h2>
+                    </td>
+                    <td class="balao">
+                        <h3>&diams;</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="colecao">
+                <img src="imagens/1Touca.jpg"/>
+                <img src="imagens/2Bermuda.jpg"/>
+                <img src="imagens/3Camisa.jpg"/>
+                <img src="imagens/4Calça.jpg" />
+                <img src="imagens/5Caveira.jpg" />
+                <img src="imagens/6Tenis.jpg" />
+        </section>
+
+        <div class="titulo">
+            <table>
+                <tr>
+                    <td class="balao">
+                        <h3>&diams;</h3>
+                    </td>
+                    <td class="seta">
+                        <h2>&larr;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;</h2>
+                    </td>
+                    <td class="descricao">
+                        <h2>&lt;DESTAQUES&gt;</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="destaques">
+            <div class="carrossellinha">
+                <aside><p class="ante" onClick="Anterior()">&#60;</p></aside>
+                <img src="imagens/c1.jpg" name="slide" id="slide"/>
+                <aside><p class="prox" onClick="Proximo()">&#62;</p></aside>
+            </div>
+            <div id="titulocarrossel">Moletons</div>
+        </section>
+
+        <section id="sobre">
+            <div class="titulo">
+                <table>
+                    <tr>
+                        <td class="seta">
+                            <h2>&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&rarr;&nbsp;</h2>
+                        </td>
+                        <td class="descricao">
+                            <h2>&lt;SOBRE&gt;</h2>
+                        </td>
+                        <td class="seta">
+                            <h2>&nbsp;&larr;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="historia">
+                <p>
+                    A StreetDev foi fundada em 2000 pelos irmãos Lucas e Rafael, que uniram suas paixões por tecnologia e moda. 
+                    Começaram em um pequeno ateliê, criando roupas com técnicas de impressão digital. 
+                    A marca rapidamente ganhou atenção por seu uso de materiais tecnológicos e sustentáveis. 
+                    Em 2010, lançaram um e-commerce, ampliando seu alcance global. 
+                    Hoje, a StreetDev é uma referência em moda streetwear, conhecida por sua criatividade e inovação.
+                </p>
+            </div>
+
+            <div>
+                <table class="tmissao">
+                    <tr>
+                        <td class="seta">
+                            <h2>&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&rarr;&nbsp;</h2>
+                        </td>
+                        <td class="descricao">
+                            <h2>&lt;MISSÃO&gt;</h2>
+                        </td>
+                    </tr>
+                </table>
+                <P class="missao">
+                    "Desenvolver moda urbana autêntica e inovadora, 
+                    oferecendo peças que expressem a individualidade 
+                    e o estilo de cada cliente."
+                </P>
+            </div>
+
+            <div>
+                <table class="tvisao">
+                    <tr>
+                        <td class="descricao">
+                            <h2>&lt;VISÃO&gt;</h2>
+                        </td>
+                        <td class="seta">
+                            <h2>&nbsp;&larr;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;</h2>
+                        </td>
+                    </tr>
+                </table>
+                <P class="visao">
+                    "Ser a marca líder em moda streetwear, reconhecida
+                    pela criatividade, sustentabilidade e impacto positivo
+                    na comunidade."
+
+                </P>
+            </div>
+                <table class="tvalores">
+                    <tr>
+                        <td class="seta">
+                            <h2>&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&rarr;</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br><br></td>
+                    </tr>
+                    <tr>
+                        <td class="descricao">
+                            <h2>V</h2>
+                            <h3>&nbsp;Qualidade&nbsp;&diams;&nbsp;&nbsp;A&nbsp;&diams;&nbsp;Criatividade</h3>
+                            <h2>L</h2>
+                            <h2>O</h2>
+                            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comunidade&nbsp;&diams;&nbsp;&nbsp;R&nbsp;&diams;&nbsp;Sustentabilidade</h3>
+                            <h2>E</h2>
+                            <h2>S</h2>
+                            <h3>&diams;</h3>
+                            <h3>Inclusividade</h3>
+                        </td>
+                    </tr>
+                </table>
+            <div>
+
+            </div>
+
+        </section>
+
+        <div class="titulob">
+            <table>
+                <tr>
+                    <td class="descricao">
+                        <h2>&lt;CONTATO&gt;</h2>
+                    </td>
+                    <td class="seta">
+                        <h2>&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&rarr;</h2>
+                    </td>
+                    <td class="balao">
+                        <h3>&diams;</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="contatos">
+            <form method="post" action="mailto:luiz.silva1815@etec.sp.gov.br" enctype="text/plain">
+                <fieldset>
+                    <legend>&nbsp;&nbsp;Contato para franquia&nbsp;&nbsp;</legend>
+                        <div>
+                            <input type="text" id="nome" name="nome" placeholder="NOME" required>
+                        </div>
+                        <div>
+                            <input type="tel" id="tel" name="tel" placeholder="WHATSAPP (+55 99 9 9999 - 9999)" required>
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="E-MAIL" required>
+                        </div>
+                </fieldset>
+
+                <div>
+                <input class="botaoform" type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </section>
+
+        <div class="titulob">
+            <table>
+                <tr>
+                    <td class="balao">
+                        <h3>&diams;</h3>
+                    </td>
+                    <td class="descricao">
+                        <h2>&lt;LOCALIZAÇÃO&gt;</h2>
+                    </td>
+                    <td class="seta">
+                        <h2>&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;</h2>
+                    </td>
+                    <td class="descricao">
+                        <h2>&lt;REDES SOCIAIS&gt;</h2>
+                    </td>
+                    <td class="balao">
+                        <h3>&diams;</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="localerede">
+            <ul>
+                <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.965041339504!2d-46.6921008!3d-23.569699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57a60f8a7ef1%3A0x9273a3cb79b9934d!2sAv.%20Brig.%20Faria%20Lima%2C%201336%20-%20Jardim%20Paulistano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001451-001!5e0!3m2!1spt-BR!2sbr!4v1732999464912!5m2!1spt-BR!2sbr" width="400px" height="300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.instagram.com/street_dev_modas/" target="_blank"><img src="imagens/instagram.svg">&nbsp;Instagram</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511956517673&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><img src="imagens/whatsapp.svg">&nbsp;WhatsApp</a></li>
+                <li><a href="mailto:street_dev@outlook.com" target="_blank"><img src="imagens/EMAIL.svg">&nbsp;E-mail</a></li>
+            </ul>
+
+        </section>
+
+        <footer>
+            <p>Termos de uso - Politica Privada 2024 - StreetDev &copy;</p>
+        </footer>
+        
+    </body>
+
+</html>

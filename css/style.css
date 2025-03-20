@@ -1,0 +1,546 @@
+@font-face
+{
+    font-family:"comic sans";
+    src: url("../Fonte/ComicNeueSansID.ttf");
+}
+
+*
+{
+    scroll-behavior: smooth;
+    font-family: "comic sans";
+    box-sizing: border-box;
+}
+
+:target
+{
+    scroll-margin-top: 140px;
+}
+
+body
+{
+    font-size: 2vw;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+ul
+{
+    list-style:none;
+}
+
+header
+{
+    font-size: 2vw;
+    background-color: rgb(0, 0, 0);
+    color: rgb(154, 82, 159);   
+    margin-top: 0%;
+    margin-right:0%;
+    margin-left:0%;
+    top: 0%;
+    left: 0%;
+    padding: 2%;
+    position: fixed;
+    width: 100%;
+    height: 15vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+header img
+{
+    height: 13vw;
+}
+
+header nav ul li
+{
+    display:inline;
+    visibility:hidden;
+}
+
+nav ul li a
+{
+    color: rgb(154, 82, 159); 
+    background-color: rgb(182, 255, 17);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+aside ul li a
+{
+    color: rgb(154, 82, 159); 
+    background-color: rgb(182, 255, 17);
+    padding: 5px;
+    border-radius: 50px;
+}
+
+ul li a:visited
+{
+    text-decoration: none;
+    color: rgb(154, 82, 159);
+}
+
+ul li a:link
+{
+    text-decoration: none;
+    color: rgb(154, 82, 159);
+}
+
+header ul li a:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 127, 66);
+    font-weight: bold;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+#botao-hamburg-abre
+{
+    font-size: 5vw;
+    cursor:pointer;
+    transition:visibility 0.3s;
+    visibility:visible;
+    background-color: rgb(182, 255, 17);
+    border-radius: 10%;
+    padding: 0,5%;
+    margin-left: 85%;
+    display:block;
+    width: 9%;
+}
+
+#botao-hamburg-fecha
+{
+    font-size: 5vw;
+    cursor:pointer;
+    transition:visibility 0.3s;
+    visibility:visible;
+    background-color: rgb(182, 255, 17);
+    border-radius: 10%;
+    padding: 0.5%;
+    margin-left: 85%;
+    display:none;
+    width: 7%;
+}
+
+#botao-hamburg-abre:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 127, 66);
+    font-weight: bold;
+}
+
+#botao-hamburg-fecha:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 127, 66);
+    font-weight: bold;
+}
+
+#menu-lateral 
+{
+    font-size: 3vw;  
+    width: 0%;
+    overflow-x: hidden;
+    position:fixed;
+    top:7%;
+    margin-top:7%;
+    right:0%;
+    margin-right: 0,5%;
+    background-color:rgb(2,2,2);
+    transition:0.5s;
+    display: flex;
+    z-index: 2;
+}
+
+#separacao
+{
+    height: 15vw;
+}
+
+.logo
+{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.logo img
+{
+    width: 50%;
+    height: 30%;
+}
+
+.titulo
+{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balao h3
+{
+    color: rgb(15, 127, 66);
+}
+
+.seta h2
+{
+    color: rgb(182, 255, 17);
+}
+
+.descricao h2
+{
+    color: rgb(154, 82, 159);
+}
+
+#colecao
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#colecao img
+{
+    border-radius:40% 0% 40% 0%;
+    cursor: pointer;
+    width: 60%;
+    padding: 1%;
+}
+
+#colecao img:active
+{
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-property: box-shadow;
+    box-shadow: 0px 0px 20px 10px rgb(154, 82, 159);
+    transform: scale(1.1);
+}
+
+#destaques
+{
+    width: 100%;
+    text-align: center;
+    color: rgb(154, 82, 159);
+}
+
+#destaques img
+{
+    width: 50%;
+}
+
+#titulocarrossel
+{
+    font-size: 4vw;
+}
+
+.carrossellinha
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.carrossellinha aside
+{
+    font-size: 5vw;
+    cursor: pointer;
+    margin: 10%;
+    padding: 1%;
+}
+
+.carrossellinha aside:hover
+{
+    background-color: rgba(15, 127, 66, 0.5);
+}
+
+.carrossellinha aside:active
+{
+    background-color: rgb(182, 255, 17);
+}
+
+#sobre
+{
+    margin-top: 3%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.historia
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3vw;
+    margin-top: -1%;
+    padding: 2%;
+}
+
+.tmissao
+{
+    margin-left: 22%;
+    padding-left: 2%;
+}
+
+.missao
+{
+    font-size: 2.5vw;
+    margin-left: 22%;
+    color: rgb(255, 255, 255);
+    margin-top: -3%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+}
+
+.tvisao
+{
+    margin-left: 45%;
+    padding-right: 2%;
+}
+
+.visao
+{
+    font-size: 2.5vw;
+    margin-left: 45%;
+    color: rgb(255, 255, 255);
+    margin-top: -3%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+}
+
+.tvalores .seta
+{
+    transform: rotate(90deg);
+}
+
+.tvalores .descricao h3
+{
+    color: rgb(255, 255, 255);
+}
+
+.tvalores
+{
+    margin-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulob
+{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#contatos
+{
+    font-size: 4vw;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-top: -1%;
+}
+
+#contatos fieldset div input
+{
+    color: rgb(15, 127, 66);
+    background-color: rgb(182, 255, 17);
+    border-radius: 90px;
+    width: 100%;
+}
+
+.botaoform
+{
+    color: rgb(182, 255, 17);
+    background-color: rgb(15, 127, 66);
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+#localerede
+{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1%;
+}
+
+#localerede ul li iframe
+{
+    margin-left: -5%;
+}
+
+#localerede ul li a
+{
+    display: inline-flex;
+    font-size: 5vw;
+    margin: 2%;
+    color: rgb(255, 255, 255);
+}
+
+footer
+{
+    margin-top: -3%;
+    margin-bottom: -3%;
+    background-color: rgb(15, 127, 66);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+@media only screen and (min-width:640px) 
+{
+
+    header
+    {
+        height: 12vw;
+    }
+
+    header img
+    {
+        height: 10vw;
+    }
+    
+    #botao-hamburg-abre
+    {
+        margin-top: 7%;
+    }
+
+    #botao-hamburg-fecha
+    {
+        margin-top: 7%;
+    }
+
+    #menu-lateral 
+    {
+        font-size: 2.5vw;
+        top: 7%;
+        margin-top: 7%;
+    }
+
+    #separacao
+    {
+        height: 13vw;
+    }
+
+    #colecao
+    {
+        margin-top: -3%;
+    }
+
+    .logo img
+    {
+        width: 30%;
+        height: 30%;
+    }
+
+    .descricao h2
+    {
+        font-size: 2vw;
+    }
+
+    #colecao img
+    {
+        width: 40%;
+    }
+
+    #sobre p
+    {
+        font-size: 2vw;
+    }
+
+    #destaques img
+    {
+        width: 30%;
+    }
+
+    #titulocarrossel
+    {
+        font-size: 3vw;
+        margin-top: -3%;
+    }
+
+    .carrossellinha
+    {
+        margin-top: -5%;
+    }
+
+    #contatos fieldset div input
+    {
+        font-size: 2vw;
+    }
+
+    .botaoform
+    {
+        font-size: 3vw;
+    }
+
+    #localerede ul li a
+    {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width:1000px) 
+{
+    :target
+    {
+        scroll-margin-top: 200px;
+    }
+
+    header
+    {
+        height: 9vw;
+    }
+
+    header nav ul li
+    {
+        visibility: visible;
+        display: inline-flex;
+    }
+
+    header img
+    {
+        height: 8vw;
+    }
+
+    #separacao
+    {
+        height: 10vw;
+    }
+
+	#menu-lateral
+	{
+        visibility:hidden;
+	}
+	
+    #botao-hamburg-abre 
+    {
+        visibility:hidden;
+        font-size: 0vw;
+    }
+
+    #botao-hamburg-fecha
+    {
+        visibility:hidden;
+    }
+
+    #colecao img
+    {
+        width: 30%;
+    }
+}
